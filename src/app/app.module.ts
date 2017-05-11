@@ -23,7 +23,7 @@ const appRoutes: Routes = [
         RouterModule.forRoot(appRoutes),
         NgbModule.forRoot()
     ],
-    declarations: [ MainPageComponent, NavBarComponent, TestComponent, PageNotFoundComponent, HomepageComponent ],
+    declarations: [ MainPageComponent, NavBarComponent, TestComponent, PageNotFoundComponent, HomepageComponent, LoginComponent ],
     bootstrap:    [ MainPageComponent ]
 })
 export class AppModule {}
