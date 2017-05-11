@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: './test-page.html',
+    templateUrl: './login-page.html',
     styles: ['ul { color: blue; }']
 })
 export class TestComponent  {
