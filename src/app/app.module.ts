@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { TestComponent } from './components/test-page/test-page';
 import {PageNotFoundComponent} from "./app.pagenotfoundcomponent";
@@ -15,7 +16,8 @@ const appRoutes: Routes = [
 @NgModule({
     imports: [
         BrowserModule,
-        RouterModule.forRoot(appRoutes)
+        RouterModule.forRoot(appRoutes),
+        NgbModule.forRoot()
     ],
     declarations: [ MainPageComponent, NavBarComponent, TestComponent, PageNotFoundComponent ],
     bootstrap:    [ MainPageComponent ]
