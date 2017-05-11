@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+import {AlarmeringenComponent} from "./components/alarmeringen-page/alarmeringen-page";
 import { TestComponent } from './components/test-page/test-page';
 import {PageNotFoundComponent} from "./app.pagenotfoundcomponent";
 import {MainPageComponent} from "./components/main-page/main-page";
@@ -14,6 +15,8 @@ import {LocationComponent} from "./components/location-page/location-page";
 const appRoutes: Routes = [
     { path: 'test', component: TestComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'alarmeringen', component: AlarmeringenComponent },
+    { path: '', component: HomepageComponent },
     { path: 'locatie', component: LocationComponent },
     { path: '**', component: PageNotFoundComponent }
 ];
