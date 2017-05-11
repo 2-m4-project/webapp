@@ -16,7 +16,6 @@ export class HomepageComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        console.log("Requesting");
         this.http.get("/homepage.json")
             .subscribe((res: Response) => {
                 this.homepageBlocks = res.json();
