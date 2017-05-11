@@ -12,7 +12,7 @@ import {NavBarComponent} from "./components/navbar/navbar";
 import {LoginComponent} from "./components/login-page/login-page";
 import {HomepageComponent} from "./components/homepage/homepage-page";
 import {LocationComponent} from "./components/location-page/location-page";
-import {Http} from "@angular/http";
+import {Http, JsonpModule, HttpModule} from "@angular/http";
 import {Http, Response} from '@angular/http';
 
 import 'rxjs/add/operator/map'
@@ -32,7 +32,8 @@ const appRoutes: Routes = [
         BrowserModule,
         RouterModule.forRoot(appRoutes),
         NgbModule.forRoot(),
-        Http
+        HttpModule,
+        JsonpModule
 
     ],
     declarations: [ MainPageComponent, NavBarComponent, TestComponent, PageNotFoundComponent, HomepageComponent, AlarmeringenComponent, GeschiedenisComponent, LoginComponent, LocationComponent ],
