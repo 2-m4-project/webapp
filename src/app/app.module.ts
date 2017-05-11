@@ -7,9 +7,11 @@ import { TestComponent } from './components/test-page/test-page';
 import {PageNotFoundComponent} from "./app.pagenotfoundcomponent";
 import {MainPageComponent} from "./components/main-page/main-page";
 import {NavBarComponent} from "./components/navbar/navbar";
+import {HomepageComponent} from "./components/homepage/homepage-page";
 
 const appRoutes: Routes = [
     { path: 'test', component: TestComponent },
+    { path: '', component: HomepageComponent },
     { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -19,7 +21,7 @@ const appRoutes: Routes = [
         RouterModule.forRoot(appRoutes),
         NgbModule.forRoot()
     ],
-    declarations: [ MainPageComponent, NavBarComponent, TestComponent, PageNotFoundComponent ],
+    declarations: [ MainPageComponent, NavBarComponent, TestComponent, PageNotFoundComponent, HomepageComponent ],
     bootstrap:    [ MainPageComponent ]
 })
 export class AppModule {}
