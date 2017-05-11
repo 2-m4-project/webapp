@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
     styles: ['ul { color: blue; }']
 })
 export class TestComponent  {
-    vriendelijkeMensen = ['Max', 'Matthew', 'Jeroen', 'Harrie'];
+    vriendelijkeMensen = ['Max', 'Matthew', 'Jeroen', 'Harrie', 'Daan ook wel hoor'];
 }
