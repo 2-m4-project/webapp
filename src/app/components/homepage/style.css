@@ -1,0 +1,26 @@
+.homepageBlock {
+    float: left;
+    width: 30%;
+    margin: 1%;
+}
+
+.homepageBlock-Wrapper {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.homepageBlock h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.homepageBlock img, .homepageBlock .description {
+    max-width: 90%;
+    margin: auto;
+}
+
+.homepageBlock a {
+    text-decoration: none;
+    color: black;
+}
