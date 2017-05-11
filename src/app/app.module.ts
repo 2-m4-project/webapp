@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
-import { TestComponent } from './app.testcomponent';
+import { TestComponent } from './components/test-page/test-page';
 import {PageNotFoundComponent} from "./app.pagenotfoundcomponent";
-import {AppComponent} from "./app.component";
+import {MainPageComponent} from "./components/main-page/main-page";
+import {NavBarComponent} from "./components/navbar/navbar";
 
 const appRoutes: Routes = [
     { path: 'test', component: TestComponent },
@@ -16,7 +17,7 @@ const appRoutes: Routes = [
         BrowserModule,
         RouterModule.forRoot(appRoutes)
     ],
-    declarations: [ AppComponent, TestComponent, PageNotFoundComponent ],
-    bootstrap:    [ AppComponent ]
+    declarations: [ MainPageComponent, NavBarComponent, TestComponent, PageNotFoundComponent ],
+    bootstrap:    [ MainPageComponent ]
 })
 export class AppModule {}
