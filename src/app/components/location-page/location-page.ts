@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: 'location-page.html',
+    templateUrl: './location-page.html',
     styles: ['ul { color: blue; }']
 })
 export class LocationComponent{
-    vriendelijkeMensen = ['Max', 'Matthew', 'Jeroen', 'Harrie', 'Daan ook wel hoor'];
+    vriendelijkeMensen = ['Max', 'Matthew', 'Jeroen', 'Harrie', 'Daan totaal niet'];
 }
