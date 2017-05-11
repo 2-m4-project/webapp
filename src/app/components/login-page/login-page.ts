@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
     templateUrl: './login-page.html',
-    styles: ['ul { color: blue; }']
+    styleUrls: ['./style.css']
 })
-export class TestComponent  {
+export class LoginComponent  {
     vriendelijkeMensen = ['Max', 'Matthew', 'Jeroen', 'Harrie'];
 }

@@ -7,9 +7,11 @@ import { TestComponent } from './components/test-page/test-page';
 import {PageNotFoundComponent} from "./app.pagenotfoundcomponent";
 import {MainPageComponent} from "./components/main-page/main-page";
 import {NavBarComponent} from "./components/navbar/navbar";
+import {LoginComponent} from "./components/login-page/login-page";
 
 const appRoutes: Routes = [
     { path: 'test', component: TestComponent },
+    { path: 'login', component: LoginComponent },
     { path: '**', component: PageNotFoundComponent }
 ];
 
