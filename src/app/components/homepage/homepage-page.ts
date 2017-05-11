@@ -28,3 +28,4 @@ export class HomepageBlock {
     text: string;
     url: string;
 }
+
