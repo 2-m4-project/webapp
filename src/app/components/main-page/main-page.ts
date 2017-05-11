@@ -4,4 +4,6 @@ import { Component } from '@angular/core';
     selector: 'alarmering-app',
     templateUrl: './main-page.html'
 })
-export class MainPageComponent {}
+export class MainPageComponent {
+    public navbarCollapse: boolean = true;
+}
