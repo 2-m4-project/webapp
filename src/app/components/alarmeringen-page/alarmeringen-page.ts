@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
     templateUrl: './alarmeringen-page.html'
 })
 
-export class AlarmeringenComponent  {
-    vriendelijkeMensen = ['Max', 'Matthew', 'Jeroen', 'Harrie', 'Daan ook wel hoor'];
-}
+export class AlarmeringenComponent  {}
