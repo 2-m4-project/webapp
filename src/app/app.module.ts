@@ -8,6 +8,7 @@ import {PageNotFoundComponent} from "./app.pagenotfoundcomponent";
 import {MainPageComponent} from "./components/main-page/main-page";
 import {NavBarComponent} from "./components/navbar/navbar";
 import {HomepageComponent} from "./components/homepage/homepage-page";
+import {HttpModule} from "@angular/http";
 
 const appRoutes: Routes = [
     { path: 'test', component: TestComponent },
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
     imports: [
         BrowserModule,
         RouterModule.forRoot(appRoutes),
-        NgbModule.forRoot()
+        NgbModule.forRoot(),
+        HttpModule
     ],
     declarations: [ MainPageComponent, NavBarComponent, TestComponent, PageNotFoundComponent, HomepageComponent ],
     bootstrap:    [ MainPageComponent ]
