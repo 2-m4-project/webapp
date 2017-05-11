@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
     templateUrl: './main-page.html'
 })
 export class MainPageComponent {
-    public navbarCollapse: boolean = true;
+    public navbarCollapsed: boolean = true;
 }
