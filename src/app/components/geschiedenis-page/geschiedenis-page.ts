@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
     templateUrl: './geschiedenis-page.html'
 })
 
-export class GeschiedenisComponent  {
-    vriendelijkeMensen = ['Max', 'Matthew', 'Jeroen', 'Harrie', 'Daan ook wel hoor'];
-}
+export class GeschiedenisComponent  {}
