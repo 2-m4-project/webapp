@@ -13,5 +13,5 @@ export class NavBarComponent {
         {text: 'Locatie', url: '/locatie'},
         {text:'Geschiedenis', url: '/geschiedenis'},
         {text: 'Alarmeringen', url: '/alarm'}
-    ]
+    ];
 }
