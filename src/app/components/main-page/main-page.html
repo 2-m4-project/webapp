@@ -1,2 +1,39 @@
 <navbar></navbar>
-<router-outlet></router-outlet>
+<router-outlet>
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Navbar</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="page-content">
+        <div class="starter-template">
+            <h1>Lorem ipsum</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur sem tincidunt, pretium nisi sollicitudin, blandit dolor. Nunc rhoncus sapien eu purus iaculis, nec vestibulum erat varius. Integer nec diam ac libero dignissim ornare at eu odio. Vestibulum sagittis tristique turpis, sed dignissim orci tempor at. Cras at finibus enim, fermentum fermentum est. Quisque dictum, est aliquam consectetur ornare, libero mauris posuere ipsum, non pulvinar leo quam sit amet urna. Praesent ligula nisi, molestie vitae tellus quis, venenatis porttitor ligula. Donec sed elit est. Fusce id ligula tristique, imperdiet augue at, porta augue.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur sem tincidunt, pretium nisi sollicitudin, blandit dolor. Nunc rhoncus sapien eu purus iaculis, nec vestibulum erat varius. Integer nec diam ac libero dignissim ornare at eu odio. Vestibulum sagittis tristique turpis, sed dignissim orci tempor at. Cras at finibus enim, fermentum fermentum est. Quisque dictum, est aliquam consectetur ornare, libero mauris posuere ipsum, non pulvinar leo quam sit amet urna. Praesent ligula nisi, molestie vitae tellus quis, venenatis porttitor ligula. Donec sed elit est. Fusce id ligula tristique, imperdiet augue at, porta augue.</p>
+        </div>
+    </div>
+
+</router-outlet>
