@@ -25,3 +25,7 @@ hr{
 #donthaveanaccount{
     font-size: 85%;
 }
+
+.close{
+    float: right;
+}

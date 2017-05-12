@@ -1,43 +1,43 @@
 <div class="container">
     <div class="col-md-4 col-md-offset-4">
         <div class="panel panel-default">
-            <div class="panel-heading"><h3 class="panel-title"><strong>Sign in </strong></h3>
-                <div id="forgotpassword"><a href="#">Forgot password?</a></div>
+            <div class="panel-heading"><h3 class="panel-title"><strong>Login </strong></h3>
+                <div id="forgotpassword"><a href="#">Wachtwoord vergeten?</a></div>
             </div>
 
             <div class="panel-body">
                 <form role="form">
                     <div class="alert alert-danger">
-                        <a class="close" data-dismiss="alert" href="#">×</a>Incorrect Username or Password!
+                        <a class="close" data-dismiss="alert" href="#">×</a>Gebruikersnaam of wachtwoord is incorrect!
                     </div>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="gebruikersnaam of email">
                     </div>
 
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                        <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                        <input id="login-password" type="password" class="form-control" name="password" placeholder="wachtwoord">
                     </div>
 
                     <div class="input-group">
                         <div class="checkbox">
                             <label>
-                                <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                <input id="login-remember" type="checkbox" name="remember" value="1"> wachtwoord onthouden?
                             </label>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-success">Sign in</button>
+                    <button type="submit" class="btn btn-success">Log in</button>
 
                     <hr>
 
                     <div class="form-group">
 
                         <div id="donthaveanaccount">
-                            Don't have an account!
+                            Heeft u nog geen account?
                             <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
-                                Sign Up Here
+                                Hier registreren!
                             </a>
                         </div>
 
