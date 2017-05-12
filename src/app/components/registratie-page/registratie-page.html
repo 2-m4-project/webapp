@@ -39,13 +39,14 @@
                     <label>Voer uw e-mail in</label>
                     <div style="margin-bottom: 12px" class="input-group"
                          [ngClass] = "{'has-error':!registrationForm.controls['eMail'].valid &&
-                         registrationForm.controls['eMail'].touched}">>
+                         registrationForm.controls['eMail'].touched}">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="Email" type="text"
-                               class="form-control" name="email"
+                        <input id="e-mail" type="email"
+                               class="form-control" name="e-mail"
                                [formControl]="registrationForm.controls['eMail']"
                                placeholder="Email">
                     </div>
+
                     <div class="alert alert-danger" *ngIf="!registrationForm.controls['eMail'].valid">
                         Je moet een correct e-mail invullen.
                     </div>
