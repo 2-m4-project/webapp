@@ -1,0 +1,27 @@
+.container{
+    margin-top: 30px;
+}
+
+#forgotpassword{
+    float: right;
+    font-size: 80%;
+    position: relative;
+    top: -30px;
+}
+
+.input-group{
+    margin-bottom: 12px;
+}
+
+.checkbox{
+    margin-top: 0px;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#donthaveanaccount{
+    font-size: 85%;
+}
