@@ -5,6 +5,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import {AlarmeringenComponent} from "./components/alarmeringen-page/alarmeringen-page";
 import {GeschiedenisComponent} from "./components/geschiedenis-page/geschiedenis-page";
+import {RegistratieComponent} from "./components/registratie-page/registratie-page";
 import { TestComponent } from './components/test-page/test-page';
 import {PageNotFoundComponent} from "./app.pagenotfoundcomponent";
 import {MainPageComponent} from "./components/main-page/main-page";
@@ -12,8 +13,7 @@ import {NavBarComponent} from "./components/navbar/navbar";
 import {LoginComponent} from "./components/login-page/login-page";
 import {HomepageComponent} from "./components/homepage/homepage-page";
 import {LocationComponent} from "./components/location-page/location-page";
-import {Http} from "@angular/http";
-import {Http, Response} from '@angular/http';
+import {Http, Response, JsonpModule, HttpModule} from "@angular/http";
 
 import 'rxjs/add/operator/map'
 
@@ -22,6 +22,7 @@ const appRoutes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'alarmeringen', component: AlarmeringenComponent },
     { path: 'geschiedenis', component: GeschiedenisComponent },
+    { path: 'registratie', component: RegistratieComponent },
     { path: '', component: HomepageComponent },
     { path: 'locatie', component: LocationComponent },
     { path: '**', component: PageNotFoundComponent }
@@ -32,10 +33,11 @@ const appRoutes: Routes = [
         BrowserModule,
         RouterModule.forRoot(appRoutes),
         NgbModule.forRoot(),
-        Http
+        HttpModule,
+        JsonpModule
 
     ],
-    declarations: [ MainPageComponent, NavBarComponent, TestComponent, PageNotFoundComponent, HomepageComponent, AlarmeringenComponent, GeschiedenisComponent, LoginComponent, LocationComponent ],
+    declarations: [ MainPageComponent, NavBarComponent, TestComponent, PageNotFoundComponent, HomepageComponent, RegistratieComponent, AlarmeringenComponent, GeschiedenisComponent, LoginComponent, LocationComponent ],
     bootstrap:    [ MainPageComponent ]
 })
 export class AppModule {}

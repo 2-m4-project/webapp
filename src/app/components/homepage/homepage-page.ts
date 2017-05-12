@@ -11,10 +11,11 @@ export class HomepageComponent implements OnInit {
 
     public homepageBlocks: HomepageBlock[];
 
-    constructor(private http: Http) { }
+    constructor(private http: Http) {
+
+    }
 
     ngOnInit(): void {
-        console.log("Requesting");
         this.http.get("/homepage.json")
             .subscribe((res: Response) => {
                 this.homepageBlocks = res.json();
