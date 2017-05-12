@@ -16,6 +16,7 @@ import {LocationComponent} from "./components/location-page/location-page";
 import {Http, Response, JsonpModule, HttpModule} from "@angular/http";
 
 import 'rxjs/add/operator/map'
+import {ReactiveFormsModule, FormsModule} from "@angular/forms";
 
 const appRoutes: Routes = [
     { path: 'test', component: TestComponent },
@@ -34,8 +35,10 @@ const appRoutes: Routes = [
         RouterModule.forRoot(appRoutes),
         NgbModule.forRoot(),
         HttpModule,
-        JsonpModule
-
+        JsonpModule,
+        ReactiveFormsModule,
+        BrowserModule,
+        FormsModule
     ],
     declarations: [ MainPageComponent, NavBarComponent, TestComponent, PageNotFoundComponent, HomepageComponent, RegistratieComponent, AlarmeringenComponent, GeschiedenisComponent, LoginComponent, LocationComponent ],
     bootstrap:    [ MainPageComponent ]
