@@ -1,1 +1,17 @@
 <h1>Alarmeringen</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Naam</th>
+            <th>Locatie</th>
+            <th>Melding</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let alarmering of alarmeringen">
+            <td>{{alarmering.naam}}</td>
+            <td>{{alarmering.locatie.lat}}, {{alarmering.locatie.long}}</td>
+            <td>{{alarmering.melding}}</td>
+        </tr>
+    </tbody>
+</table>
