@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: './alarmeringen-page.html'
+    templateUrl: './alarmeringen-page.html',
+    styleUrls: ['./style.css']
 })
 
 export class AlarmeringenComponent  {
