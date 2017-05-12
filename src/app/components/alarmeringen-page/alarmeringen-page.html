@@ -4,6 +4,7 @@
         <tr>
             <th>Naam</th>
             <th>Locatie</th>
+            <th>Locatie</th>
             <th>Melding</th>
         </tr>
     </thead>
@@ -11,6 +12,9 @@
         <tr *ngFor="let alarmering of alarmeringen">
             <td>{{alarmering.naam}}</td>
             <td>{{alarmering.locatie.lat}}, {{alarmering.locatie.long}}</td>
+            <td>
+                <img src="https://maps.googleapis.com/maps/api/staticmap?zoom=14&size=350x100&markers=color:red|{{alarmering.locatie.lat}},{{alarmering.locatie.long}}&key=AIzaSyAL5d7e4IMjku9fCIRBFXgTVT_WEP1CozY">
+            </td>
             <td>{{alarmering.melding}}</td>
         </tr>
     </tbody>
