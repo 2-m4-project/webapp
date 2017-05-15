@@ -13,8 +13,9 @@
             <td>{{alarmering.persoon.naam}}</td>
             <td>{{alarmering.locatie.adres.straat}}, {{alarmering.locatie.adres.plaats}}</td>
             <td>
-
               <img src="https://maps.googleapis.com/maps/api/staticmap?zoom=14&size=350x100&markers=color:red|{{alarmering.locatie.coordinaten.lat}},{{alarmering.locatie.coordinaten.long}}&key=AIzaSyAL5d7e4IMjku9fCIRBFXgTVT_WEP1CozY">
+                <br />
+                <a href="https://maps.google.com?q={{alarmering.locatie.coordinaten.lat}},{{alarmering.locatie.coordinaten.long}}" target="_blank">Toon in Google Maps.</a>
             </td>
             <td>{{alarmering.melding.bericht}}</td>
         </tr>

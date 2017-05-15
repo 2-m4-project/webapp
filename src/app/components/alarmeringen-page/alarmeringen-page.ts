@@ -77,6 +77,26 @@ export class AlarmeringenComponent {
         },
         {
             persoon: {
+                naam: 'Hayri'
+            },
+            locatie: {
+                adres: {
+                    straat: "Puschkinallee",
+                    plaats: "Berlijn"
+                },
+                coordinaten: {
+                    lat: 52.493805,
+                    long: 13.455292
+                }
+            },
+            melding: {
+                categorie: "gebied",
+                bericht: "gebied verlaten",
+                datum: "2017-05-03 13:02"
+            }
+        },
+        {
+            persoon: {
                 naam: 'Jeffrey'
             },
             locatie: {
@@ -87,6 +107,26 @@ export class AlarmeringenComponent {
                 coordinaten: {
                     lat: 53.173243,
                     long: 7.006474
+                }
+            },
+            melding: {
+                categorie: "val",
+                bericht: "gevallen",
+                datum: "2017-05-03 13:02"
+            }
+        },
+        {
+            persoon: {
+                naam: 'Jerome'
+            },
+            locatie: {
+                adres: {
+                    straat: "Unnamed Road",
+                    plaats: "Nasarawa"
+                },
+                coordinaten: {
+                    lat: 9.081999 ,
+                    long: 8.675277
                 }
             },
             melding: {
