@@ -10,19 +10,17 @@ import { AgmMap, AgmMarker } from '@agm/core';
 
 export class GeschiedenisComponent implements OnInit {
 
-    public lat: number;
-    public lng: number;
-    public zoom: number;
-
     public markers: Marker[];
 
     ngOnInit(): void {
         this.markers = [
-            new Marker(53.1488943, 7.0340214, 'M'),
-            new Marker(52.7788414, 6.914114, 'M')
+            new Marker(53.1488943, 7.0340214, '.'),
+            new Marker(52.7788414, 6.914114, '.'),
+            new Marker(52.770713, 6.917195, '.'),
+            new Marker(52.781817, 6.883648, '.'),
+            new Marker(52.771919, 6.896551, '.')
         ];
     }
-
 }
 
 export class Marker {
