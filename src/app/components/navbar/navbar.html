@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" [ngbCollapse]="navbarCollapsed">
             <ul class="navbar-nav mr-auto">
                 <li *ngFor="let link of links" class="nav-item">
-                    <a routerLink = "{{link.url}}" routerLinkActive="active" class="nav-link">{{link.text}}</a>
+                    <a routerLink = "{{link.url}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="nav-link">{{link.text}}</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
