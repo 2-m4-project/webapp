@@ -2,7 +2,11 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" (click)="navbarCollapsed = !navbarCollapsed" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="/"><img src='/app/components/navbar/logo.png' height="50px" width="auto" alt="Home"/></a>
+
+    <a class="navbar-brand" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <img src="/app/components/navbar/logo-small.png" width="auto" alt="Site Logo"/>
+    </a>
+    
     <div class="collapse navbar-collapse" [ngbCollapse]="navbarCollapsed">
         <ul class="navbar-nav mr-auto">
             <li *ngFor="let link of links" class="nav-item">
