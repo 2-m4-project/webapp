@@ -2,15 +2,13 @@
 <h1>Homepage</h1>
 
 <div class="row">
-    <div class="homepageBlock-Wrapper">
-        <div *ngFor="let homepageBlock of homepageBlocks" class="homepageBlock">
+        <div *ngFor="let homepageBlock of homepageBlocks" class="homepageBlock col-md-4">
             <a href="{{homepageBlock.url}}">
                 <h1>{{homepageBlock.title}}</h1>
                 <img src="{{homepageBlock.photo}}"><br />
             <div class="description">{{homepageBlock.text}}</div>
             </a>
         </div>
-    </div>
 </div>
 
 </div>
