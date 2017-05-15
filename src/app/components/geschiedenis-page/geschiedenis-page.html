@@ -1,1 +1,5 @@
 <h1>Geschiedenis</h1>
+<agm-map [latitude]="52.7788414" [longitude]="6.914114" [zoom]="12">
+    <agm-marker *ngFor="let marker of markers" [latitude]="marker.lat" [longitude]="marker.long" [label]="marker.label">
+    </agm-marker>
+</agm-map>

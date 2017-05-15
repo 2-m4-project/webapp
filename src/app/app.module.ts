@@ -14,6 +14,7 @@ import {LoginComponent} from "./components/login-page/login-page";
 import {HomepageComponent} from "./components/homepage/homepage-page";
 import {LocationComponent} from "./components/location-page/location-page";
 import {Http, Response, JsonpModule, HttpModule} from "@angular/http";
+import {AgmCoreModule} from "@agm/core"
 
 import 'rxjs/add/operator/map'
 import {ReactiveFormsModule, FormsModule} from "@angular/forms";
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
         JsonpModule,
         ReactiveFormsModule,
         BrowserModule,
-        FormsModule
+        FormsModule,
+        AgmCoreModule.forRoot({apiKey: 'AIzaSyCq4B7wIDkkbJinMCpLMwpS5nRwe573UH4'})
     ],
     declarations: [ MainPageComponent, NavBarComponent, TestComponent, PageNotFoundComponent, HomepageComponent, RegistratieComponent, AlarmeringenComponent, GeschiedenisComponent, LoginComponent, LocationComponent ],
     bootstrap:    [ MainPageComponent ]
