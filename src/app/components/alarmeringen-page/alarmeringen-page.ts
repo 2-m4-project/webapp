@@ -8,7 +8,10 @@ import {Http, Response} from '@angular/http';
 
 export class AlarmeringenComponent {
 
-    constructor(private http: Http) {}
+    constructor(private http: Http) {
+
+
+    }
 
     result : String = "empty";
 
