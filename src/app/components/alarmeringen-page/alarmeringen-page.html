@@ -10,13 +10,13 @@
     </thead>
     <tbody>
         <tr *ngFor="let alarmering of alarmeringen" class="alarmering">
-            <td>{{alarmering.persoon}}</td>
-            <td>{{alarmering.locatie.straat}}</td>
+            <td>{{alarmering.persoon.naam}}</td>
+            <td>{{alarmering.locatie.adres.straat}}, {{alarmering.locatie.adres.plaats}}</td>
             <td>
 
-              <img src="https://maps.googleapis.com/maps/api/staticmap?zoom=14&size=350x100&markers=color:red|{{alarmering.locatie.lat}},{{alarmering.locatie.long}}&key=AIzaSyAL5d7e4IMjku9fCIRBFXgTVT_WEP1CozY">
+              <img src="https://maps.googleapis.com/maps/api/staticmap?zoom=14&size=350x100&markers=color:red|{{alarmering.locatie.coordinaten.lat}},{{alarmering.locatie.coordinaten.long}}&key=AIzaSyAL5d7e4IMjku9fCIRBFXgTVT_WEP1CozY">
             </td>
-            <td>{{alarmering.melding}}</td>
+            <td>{{alarmering.melding.bericht}}</td>
         </tr>
     </tbody>
 </table>
