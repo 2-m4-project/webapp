@@ -8,9 +8,7 @@ import {Http, Response} from '@angular/http';
 
 export class AlarmeringenComponent {
 
-    constructor(private http: Http) {
-
-    }
+    constructor(private http: Http) {}
 
     result : String = "empty";
 
@@ -31,7 +29,7 @@ export class AlarmeringenComponent {
             },
             melding: {
                 categorie: "gebied",
-                bericht: "gebied verlaten",
+                bericht: "Gebied verlaten",
                 datum: "2017-05-03 13:02"
             }
         },
@@ -51,7 +49,7 @@ export class AlarmeringenComponent {
             },
             melding: {
                 categorie: "val",
-                bericht: "gevallen",
+                bericht: "Gevallen",
                 datum: "2017-05-03 13:02"
             }
         },
@@ -71,7 +69,27 @@ export class AlarmeringenComponent {
             },
             melding: {
                 categorie: "gebied",
-                bericht: "gebied verlaten",
+                bericht: "Gebied verlaten",
+                datum: "2017-05-03 13:02"
+            }
+        },
+        {
+            persoon: {
+                naam: 'Hayri'
+            },
+            locatie: {
+                adres: {
+                    straat: "Puschkinallee",
+                    plaats: "Berlijn"
+                },
+                coordinaten: {
+                    lat: 52.493805,
+                    long: 13.455292
+                }
+            },
+            melding: {
+                categorie: "gebied",
+                bericht: "Gebied verlaten",
                 datum: "2017-05-03 13:02"
             }
         },
@@ -91,7 +109,27 @@ export class AlarmeringenComponent {
             },
             melding: {
                 categorie: "val",
-                bericht: "gevallen",
+                bericht: "Gevallen",
+                datum: "2017-05-03 13:02"
+            }
+        },
+        {
+            persoon: {
+                naam: 'Jerome'
+            },
+            locatie: {
+                adres: {
+                    straat: "Unnamed Road",
+                    plaats: "Nasarawa"
+                },
+                coordinaten: {
+                    lat: 9.081999 ,
+                    long: 8.675277
+                }
+            },
+            melding: {
+                categorie: "val",
+                bericht: "Gevallen",
                 datum: "2017-05-03 13:02"
             }
         }
