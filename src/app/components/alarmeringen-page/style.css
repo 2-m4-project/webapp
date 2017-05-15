@@ -1,3 +1,7 @@
+#alarmeringen-table {
+    width: 100%;
+}
+
 #alarmeringen-table thead tr {
     background-color: #f0b47f;
 }
