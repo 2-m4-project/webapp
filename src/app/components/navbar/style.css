@@ -1,6 +1,22 @@
-.nav-item a {
-    color: white;
+.nav-item > a {
+    color: white
 }
+
+.nav-item > a.active {
+    color: #FFF;
+    border-bottom: 4px solid #FFF;
+    padding-bottom: 4px;
+}
+
 .nav-item a:hover{
-    color: lightgrey;
+    color: #ddd;
+}
+
+nav.navbar > .navbar-brand {
+    margin-right: 20px;
+}
+
+nav.navbar > .navbar-brand > img {
+    max-height: 29px;
+    margin-top: -4px;
 }

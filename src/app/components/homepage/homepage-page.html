@@ -1,11 +1,14 @@
+<div class="container">
 <h1>Homepage</h1>
 
-<div class="homepageBlock-Wrapper">
-    <div *ngFor="let homepageBlock of homepageBlocks" class="homepageBlock">
-        <a href="{{homepageBlock.url}}">
-            <h1>{{homepageBlock.title}}</h1>
-            <img src="{{homepageBlock.photo}}"><br />
-        <div class="description">{{homepageBlock.text}}</div>
-        </a>
+    <div class="row">
+            <div *ngFor="let homepageBlock of homepageBlocks" class="homepageBlock col-md-4">
+                <a href="{{homepageBlock.url}}">
+                    <h1>{{homepageBlock.title}}</h1>
+                    <img src="{{homepageBlock.photo}}"><br />
+                <div class="description">{{homepageBlock.text}}</div>
+                </a>
+            </div>
     </div>
+
 </div>

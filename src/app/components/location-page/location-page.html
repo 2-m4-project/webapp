@@ -1,7 +1,5 @@
-<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBt2pSkuy4rBwctwLwwIOhf0NfFb8_pZok&q=53.103243,7.006474"
-        width="600"
-        height="450"
-        frameborder="0"
-        style="border:0"
-        allowfullscreen>
-</iframe>
+<h1>Locatie</h1>
+<agm-map [latitude]="52.7788414" [longitude]="6.914114" [zoom]="12">
+    <agm-marker *ngFor="let marker of markers" [latitude]="marker.lat" [longitude]="marker.long" [label]="marker.label">
+    </agm-marker>
+</agm-map>
