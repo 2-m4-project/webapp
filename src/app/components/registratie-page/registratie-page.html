@@ -50,7 +50,7 @@
                     <div class="alert alert-danger" *ngIf="!registrationForm.controls['eMail'].valid">
                         Je moet een correct e-mail invullen.
                     </div>
-<!--
+
                     <label>Voer het door u gewenste gebruikersnaam in</label>
                     <div style="margin-bottom: 12px" class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -61,6 +61,10 @@
                                placeholder="Gebruikersnaam">
                     </div>
 
+                    <div class="alert alert-danger" *ngIf="!registrationForm.controls['userName'].valid">
+                        Je moet een gebruikersnaam invullen.
+                    </div>
+
                     <label>Voer het door u gewenste wachtwoord in</label>
                     <div style="margin-bottom: 12px" class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
@@ -68,6 +72,9 @@
                                class="form-control" name="password"
                                [formControl]="registrationForm.controls['passWord']"
                                placeholder="Wachtwoord">
+                    </div>
+                    <div class="alert alert-danger" *ngIf="!registrationForm.controls['passWord'].valid">
+                        Je wachtwoord moet minimaal 7 tekens bevatten.
                     </div>
 
                     <label>Herhaal uw wachtwoord</label>
@@ -78,9 +85,12 @@
                                [formControl]="registrationForm.controls['repeatPassWord']"
                                placeholder="Wachtwoord">
                     </div>
+                    <div class="alert alert-danger" *ngIf="!registrationForm.controls['repeatPassWord'].valid">
+                        De wachtwoorden staan niet gelijk aan elkaar.
+                    </div>
 
                     <hr style="margin-top:10px;margin-bottom:10px;" >
-                    -->
+
                     <button type="submit" class="btn btn-success" [disabled]="!registrationForm.valid"> Registreer</button>
 
 
