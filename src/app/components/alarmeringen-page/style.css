@@ -1,9 +1,16 @@
-#alarmeringen-table thead {
+#alarmeringen-table {
+    width: 100%;
+}
+
+#alarmeringen-table thead tr {
     background-color: #f0b47f;
 }
 
 #alarmeringen-table th,
 #alarmeringen-table td{
     padding: 10px 20px;
-    text-transform: capitalize;
+}
+
+#alarmeringen-table tr:nth-child(even) {
+    background-color: #EEEEEE;
 }
