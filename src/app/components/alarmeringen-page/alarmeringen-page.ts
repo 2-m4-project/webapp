@@ -8,9 +8,7 @@ import {Http, Response} from '@angular/http';
 
 export class AlarmeringenComponent {
 
-    constructor(private http: Http) {
-
-    }
+    constructor(private http: Http) {}
 
     result : String = "empty";
 
@@ -31,7 +29,7 @@ export class AlarmeringenComponent {
             },
             melding: {
                 categorie: "gebied",
-                bericht: "gebied verlaten",
+                bericht: "Gebied verlaten",
                 datum: "2017-05-03 13:02"
             }
         },
@@ -51,7 +49,7 @@ export class AlarmeringenComponent {
             },
             melding: {
                 categorie: "val",
-                bericht: "gevallen",
+                bericht: "Gevallen",
                 datum: "2017-05-03 13:02"
             }
         },
@@ -71,7 +69,7 @@ export class AlarmeringenComponent {
             },
             melding: {
                 categorie: "gebied",
-                bericht: "gebied verlaten",
+                bericht: "Gebied verlaten",
                 datum: "2017-05-03 13:02"
             }
         },
@@ -91,7 +89,7 @@ export class AlarmeringenComponent {
             },
             melding: {
                 categorie: "gebied",
-                bericht: "gebied verlaten",
+                bericht: "Gebied verlaten",
                 datum: "2017-05-03 13:02"
             }
         },
@@ -111,7 +109,7 @@ export class AlarmeringenComponent {
             },
             melding: {
                 categorie: "val",
-                bericht: "gevallen",
+                bericht: "Gevallen",
                 datum: "2017-05-03 13:02"
             }
         },
@@ -131,7 +129,7 @@ export class AlarmeringenComponent {
             },
             melding: {
                 categorie: "val",
-                bericht: "gevallen",
+                bericht: "Gevallen",
                 datum: "2017-05-03 13:02"
             }
         }
