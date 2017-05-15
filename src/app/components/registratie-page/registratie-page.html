@@ -18,7 +18,7 @@
                                placeholder="Voornaam">
 
                     </div>
-                    <div class="alert alert-danger" *ngIf="!registrationForm.controls['firstName'].valid">
+                    <div class="alert alert-danger" *ngIf="registrationForm.controls['firstName'].touched && !registrationForm.controls['firstName'].valid">
                         Je moet een voornaam invullen.
                     </div>
 
@@ -32,7 +32,7 @@
                                [formControl]="registrationForm.controls['surName']"
                                placeholder="Achternaam">
                     </div>
-                    <div class="alert alert-danger" *ngIf="!registrationForm.controls['surName'].valid">
+                    <div class="alert alert-danger" *ngIf="registrationForm.controls['surName'].touched && !registrationForm.controls['surName'].valid">
                         Je moet een achternaam invullen.
                     </div>
 
@@ -47,7 +47,7 @@
                                placeholder="Email">
                     </div>
 
-                    <div class="alert alert-danger" *ngIf="!registrationForm.controls['eMail'].valid">
+                    <div class="alert alert-danger" *ngIf="registrationForm.controls['eMail'].touched && !registrationForm.controls['eMail'].valid">
                         Je moet een correct e-mail invullen.
                     </div>
 
@@ -61,7 +61,7 @@
                                placeholder="Gebruikersnaam">
                     </div>
 
-                    <div class="alert alert-danger" *ngIf="!registrationForm.controls['userName'].valid">
+                    <div class="alert alert-danger" *ngIf="registrationForm.controls['userName'].touched && !registrationForm.controls['userName'].valid">
                         Je moet een gebruikersnaam invullen.
                     </div>
 
@@ -73,7 +73,7 @@
                                [formControl]="registrationForm.controls['passWord']"
                                placeholder="Wachtwoord">
                     </div>
-                    <div class="alert alert-danger" *ngIf="!registrationForm.controls['passWord'].valid">
+                    <div class="alert alert-danger" *ngIf="registrationForm.controls['passWord'].touched && !registrationForm.controls['passWord'].valid">
                         Je wachtwoord moet minimaal 7 tekens bevatten.
                     </div>
 
@@ -85,7 +85,7 @@
                                [formControl]="registrationForm.controls['repeatPassWord']"
                                placeholder="Wachtwoord">
                     </div>
-                    <div class="alert alert-danger" *ngIf="!registrationForm.controls['repeatPassWord'].valid">
+                    <div class="alert alert-danger" *ngIf="registrationForm.controls['repeatPassWord'].touched && !registrationForm.controls['repeatPassWord'].valid">
                         De wachtwoorden staan niet gelijk aan elkaar.
                     </div>
 
