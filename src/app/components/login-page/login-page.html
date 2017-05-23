@@ -6,29 +6,34 @@
             </div>
 
             <div class="panel-body">
-                <form role="form">
-                    <div class="alert alert-danger">
-                        <a class="close" data-dismiss="alert" href="#">×</a>Gebruikersnaam of wachtwoord is incorrect!
-                    </div>
-                    <div class="input-group">
+                <form [formGroup]="loginForm" (ngSubmit)="submitForm(loginForm.value)">
+                    <label>Voer het door uw gebruikersnaam in</label>
+                    <div style="margin-bottom: 12px" class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="gebruikersnaam of email">
+                        <input id="-username" type="text"
+                               class="form-control" name="username"
+                               [formControl]="loginForm.controls['userName']"
+
+                               placeholder="Gebruikersnaam">
                     </div>
 
-                    <div class="input-group">
+                    <div class="alert alert-danger" *ngIf="loginForm.controls['userName'].touched && !loginForm.controls['userName'].valid">
+                        Je moet een gebruikersnaam invullen.
+                    </div>
+
+                    <label>Voer het door u gewenste wachtwoord in</label>
+                    <div style="margin-bottom: 12px" class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                        <input id="login-password" type="password" class="form-control" name="password" placeholder="wachtwoord">
+                        <input id="login-password" type="password"
+                               class="form-control" name="password"
+                               [formControl]="loginForm.controls['passWord']"
+                               placeholder="Wachtwoord">
+                    </div>
+                    <div class="alert alert-danger" *ngIf="loginForm.controls['passWord'].touched && !loginForm.controls['passWord'].valid">
+                        Vul uw wachtwoord in.
                     </div>
 
-                    <div class="input-group">
-                        <div class="checkbox">
-                            <label>
-                                <input id="login-remember" type="checkbox" name="remember" value="1"> wachtwoord onthouden?
-                            </label>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-success">Log in</button>
+                    <button type="submit" class="btn btn-success" [disabled]="!loginForm.valid"> Log in</button>
 
                     <hr>
 
