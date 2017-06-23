@@ -4,8 +4,7 @@ import { AgmMap, AgmMarker } from '@agm/core';
 
 @Component({
     templateUrl: './geschiedenis-page.html',
-    styleUrls: ['./style.css'],
-    directives: [AgmMap]
+    styleUrls: ['./style.css']
 })
 
 export class GeschiedenisComponent implements OnInit {

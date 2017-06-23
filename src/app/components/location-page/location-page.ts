@@ -4,8 +4,7 @@ import { AgmMap, AgmMarker } from '@agm/core';
 @Component({
     templateUrl: './location-page.html',
     styles: ['ul { color: blue; }'],
-    styleUrls: ['./style.css'],
-    directives: [AgmMap]
+    styleUrls: ['./style.css']
 })
 export class LocationComponent implements OnInit{
 
